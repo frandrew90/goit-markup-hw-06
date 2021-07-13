@@ -346,12 +346,14 @@ img {
   letter-spacing: 0.06em;
 
   transition: background-color var(--transition-time)
-    var(--transition-time-func);
+      var(--transition-time-func),
+    box-shadow var(--transition-time) var(--transition-time-func);
 }
 
 .button.primary:hover,
 .button.primary:focus {
   background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Секция преймущества */
@@ -843,6 +845,8 @@ img {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity var(--transition-time) var(--transition-time-func),
+    transform var(--transition-time) var(--transition-time-func);
 }
 
 .modal {
@@ -856,9 +860,11 @@ img {
   position: absolute;
   left: 50%;
   top: 50%;
+  transform: scale(1);
   transform: translate(-50%, -50%);
   opacity: 1;
-  transition: opacity var(--transition-time) var(--transition-time-func);
+  transition: opacity var(--transition-time) var(--transition-time-func),
+    transform var(--transition-time) var(--transition-time-func);
 }
 
 .modal-icon {
@@ -881,8 +887,10 @@ img {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  /* transform: scale(0.5); */
 }
 
 .backdrop.is-hidden .modal {
   opacity: 0;
+  transform: scale(0.5);
 }
