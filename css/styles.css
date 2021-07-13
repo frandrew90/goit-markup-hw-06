@@ -826,7 +826,7 @@ img {
   margin-left: 10px;
 }
 
-.footer-links h2 {
+.page-footer .footer-title {
   margin-bottom: 20px;
 
   font-family: Roboto;
@@ -835,6 +835,67 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+/* Футер Форма подписки */
+
+.subscription {
+  margin-left: 93px;
+}
+
+.subscription-box {
+  display: flex;
+  align-items: center;
+}
+
+.form .ft-input {
+  display: block;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: rgba(255, 255, 255, 0.6);
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  background-color: transparent;
+}
+
+.footer-btn {
+  margin-left: 12px;
+
+  padding: 8px 27px 8px 28px;
+
+  color: var(--secondary-accent-color);
+  background-color: var(--primary-accent-color);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color var(--transition-time)
+      var(--transition-time-func),
+    box-shadow var(--transition-time) var(--transition-time-func);
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer-btn .social-icon {
+  margin-left: 10px;
+  fill: var(--secondary-accent-color);
 }
 
 /* ------------------Модальное окно */
