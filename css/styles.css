@@ -997,8 +997,8 @@ img {
   fill: var(--primary-accent-color);
 }
 
-.input-icon:hover.form-input,
-.input-icon:focus.form-input {
+.input-icon:hover ~ .form-input,
+.input-icon:focus ~ .form-input {
   border-color: var(--primary-accent-color);
 }
 
