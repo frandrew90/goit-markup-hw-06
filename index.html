@@ -607,6 +607,69 @@
         </button>
 
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <div class="modal-form-field">
+          <form class="modal-form-field">
+            <label class="form-field-box">
+              Имя
+
+              <input
+                type="text"
+                name="username"
+                placeholder=""
+                class="modal-input"
+              />
+              <svg class="modal-input-icon">
+                <use href="./images/symbol-defs.svg#icon-Vector-1"></use>
+              </svg>
+            </label>
+
+            <label class="form-field-box">
+              Телефон
+              <input
+                type="tel"
+                name="phone-number"
+                placeholder=""
+                class="modal-input"
+              />
+              <svg class="modal-input-icon">
+                <use href="./images/symbol-defs.svg#icon-Vector-2"></use>
+              </svg>
+            </label>
+
+            <label class="form-field-box">
+              Почта
+              <input
+                type="email"
+                name="email"
+                placeholder=""
+                class="modal-input"
+              />
+              <svg class="modal-input-icon">
+                <use href="./images/symbol-defs.svg#icon-Vector-3"></use>
+              </svg>
+            </label>
+
+            <label>
+              Комментарий
+              <textarea
+                name="feedback"
+                rows="6"
+                placeholder="Введите текст"
+                class="modal-input"
+              ></textarea>
+            </label>
+
+            <label>
+              <input type="checkbox" name="conditions" class="modal-input" />
+              Соглашаюсь с рассылкой и принимаю
+              <a href="#">Условия договора</a>
+            </label>
+
+            <button type="submit" class="button modal-send-button">
+              Отправить
+            </button>
+          </form>
+        </div>
       </div>
     </div>
 

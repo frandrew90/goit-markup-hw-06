@@ -860,13 +860,20 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
-  font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  background-color: transparent;
+}
+
+.form .ft-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
 }
 
 .footer-btn {
@@ -940,8 +947,88 @@ img {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 12px;
 
   color: var(--title-text-color);
+}
+
+.modal-form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-input {
+  padding-top: 11px;
+  padding-left: 42px;
+  padding-bottom: 11px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  height: auto;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal-input[name="conditions"],
+.modal-input a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.form-field-box {
+  position: relative;
+}
+
+.modal-input[name="feedback"] {
+  padding: 12px 16px;
+  resize: none;
+}
+
+.modal-input-icon {
+  width: 18px;
+  height: 18px;
+  margin-left: 12px;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.modal-send-button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 8px 53px;
+
+  color: var(--secondary-accent-color);
+  background-color: var(--primary-accent-color);
+
+  text-align: center;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  transition: background-color var(--transition-time)
+      var(--transition-time-func),
+    box-shadow var(--transition-time) var(--transition-time-func);
 }
 
 .modal-icon {
