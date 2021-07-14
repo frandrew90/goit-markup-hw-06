@@ -92,6 +92,19 @@ img {
   height: auto;
 }
 
+/* -------------------visually-hidden */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 /* CONTAINER */
 .container {
   width: 1200px;
@@ -952,67 +965,6 @@ img {
   color: var(--title-text-color);
 }
 
-/* .modal-form-field {
-  display: flex;
-  flex-direction: column;
-}
-
-.modal-input {
-  padding-top: 11px;
-  padding-left: 42px;
-  padding-bottom: 11px;
-  margin-top: 4px;
-  margin-bottom: 10px;
-  display: block;
-  width: 100%;
-  height: auto;
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-
-  color: rgba(117, 117, 117, 0.5);
-
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
-
-.privacy-input,
-.privacy .privacy-input-text,
-.privacy a {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  /* identical to box height, or 171% */
-
-/* letter-spacing: 0.03em;
-
-  color: #757575;
-}
-
-.form-field-box {
-  position: relative;
-}
-
-.modal-input[name="feedback"] {
-  padding: 12px 16px;
-  resize: none;
-}
-
-.modal-input-icon {
-  width: 18px;
-  height: 18px;
-  margin-left: 12px;
-  position: absolute;
-  top: 60%;
-  transform: translateY(-50%);
-} */
-
-/* --------------------------------------------------------- */
-
 .modal-title {
   font-weight: 700;
   font-size: 20px;
@@ -1119,25 +1071,27 @@ img {
 
 .input-check-text a {
   color: var(--primary-accent-color);
+  display: block;
+  margin-left: 5px;
 }
 
 .input-check-text span {
   width: 16px;
-  height: 16px;
-  border: 2px solid #090b13;
+  height: 15px;
+  border: 2px solid var(--title-text-color);
   border-radius: 2px;
-  margin-right: 7px;
+  margin-right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .check-icon {
-  fill: #161515;
+  fill: var(--secondary-accent-color);
 }
 
 .input-check:checked + .input-check-text span {
-  background-color: blue;
+  background-color: var(--primary-accent-color);
   border: none;
 }
 
